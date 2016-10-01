@@ -30,5 +30,5 @@ docker run --name dev_env -dt hrektts/dev-env tail -f /dev/null
 Shell Access
 ------------
 ```
-docker exec -it dev_env zsh"
+docker exec -it dev_env zsh
 ```
