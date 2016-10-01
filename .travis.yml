@@ -1,0 +1,11 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker info
+  - docker build -t hrektts/dev-env .
+
+script:
+  - docker run -it hrektts/dev-env echo "Hello World"
